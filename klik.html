@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Button Hover Effect</title>
+    <style>
+        /* Reset Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem; /* Ukuran teks besar */
+        }
+
+        /* Tombol */
+        .btn {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid red;
+            padding: 12px 24px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Efek Hover */
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem; /* Ukuran teks sedang */
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem; /* Ukuran tombol lebih kecil */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem; /* Ukuran teks kecil */
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.8rem; /* Ukuran tombol paling kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SILAHKAN DI KLIK YU</h1>
+        <a href="index.html">
+            <button class="btn">KLIK</button>
+        </a>
+    </div>
+</body>
+</html>
